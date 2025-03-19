@@ -1,10 +1,11 @@
 import "../styles/ToggleButton.css"
 
 
-
 interface ToggleButtonProps {
+
     openNavbar: () => void;
     isOpen: boolean;
+    
 }
 
 

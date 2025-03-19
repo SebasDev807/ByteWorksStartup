@@ -37,10 +37,6 @@ export const Hero = () => {
                 src="/abstract-figure_1.svg" alt="Abstract figure" />
 
 
-
-
-
-
         </section>
     )
 }

@@ -6,7 +6,6 @@ export default function Navbar() {
    
  const {isMenuOpen, handleOpenNavbar} = useNavbar();
 
-
     return (
         <header className="header">
             <h1 className="logo">ByteWorks</h1>

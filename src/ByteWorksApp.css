@@ -3,8 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 12rem;
   position: relative;
+  padding: 1rem 12rem;
+  height: 8rem;
 }
 
 .logo {
@@ -65,11 +66,14 @@
 
 /* HERO SECTION */
 .hero-section {
+  
+  
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 7rem 1rem 12rem;
-  gap: 6rem;
+  padding:  1rem 12rem;
+  
+  
   /* Espacio entre texto e imagen */
 }
 
@@ -89,11 +93,12 @@
   font-size: 2rem;
   font-weight: 300;
   margin-bottom: 2.5rem;
+  line-height: 3.2rem;
 }
 
 .hero-img {
-  width: 50rem;
   height: auto;
+  width: 50%;
   object-fit: cover;
 }
 
