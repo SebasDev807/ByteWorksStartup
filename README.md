@@ -1,28 +1,28 @@
-# Iniciar Proyecto en Vite con pnpm
+# Start Project with Vite and pnpm
 
-Este proyecto usa **Vite** y **pnpm** para el desarrollo.
+This project uses **Vite** and **pnpm** for development.
 
-## 📦 Requisitos
+## 📦 Requirements
 
-Asegúrate de tener instalado:
-- [Node.js](https://nodejs.org/) (versión recomendada: 18+)
-- [pnpm](https://pnpm.io/installation) (si no lo tienes, instálalo con `npm install -g pnpm`)
+Make sure you have installed:
+- [Node.js](https://nodejs.org/) (recommended version: 18+)
+- [pnpm](https://pnpm.io/installation) (if not installed, run `npm install -g pnpm`)
 
-## 🚀 Instalación
+## 🚀 Installation
 
-1. Instalar Vite si no lo tienes:
+1. Install Vite if not already installed:
    ```sh
    pnpm create vite@latest
    ```
 
-2. Instalar dependencias del proyecto:
+2. Install project dependencies:
    ```sh
    pnpm install
    ```
 
-3. Iniciar el servidor de desarrollo:
+3. Start the development server:
    ```sh
    pnpm dev
    ```
 
-Más información en la documentación oficial de [Vite](https://vitejs.dev/).
+More information in the official [Vite documentation](https://vitejs.dev/).
