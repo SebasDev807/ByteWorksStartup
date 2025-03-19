@@ -99,7 +99,7 @@
   object-fit: cover;
 }
 
-/* 📌 BOTONES */
+/*  BOTONES */
 .hero-buttons {
   display: flex;
   gap: 2rem;
