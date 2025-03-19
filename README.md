@@ -10,9 +10,9 @@ Make sure you have installed:
 
 ## 🚀 Installation
 
-1. Install Vite if not already installed:
+1. Install pnmp if not already installed on environment:
    ```sh
-   pnpm create vite@latest
+   npm i -g pnpm
    ```
 
 2. Install project dependencies:
