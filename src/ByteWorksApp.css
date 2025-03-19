@@ -1,0 +1,205 @@
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 12rem;
+  position: relative;
+}
+
+.logo {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.navbar {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: row;
+
+  
+}
+
+.navbar.open {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.nav-link {
+  position: relative;
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Línea debajo del botón */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* HERO SECTION */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 12rem;
+  gap: 6rem;
+  /* Espacio entre texto e imagen */
+}
+
+.hero-info {
+  max-width: 50rem;
+  /* Evita que el texto sea demasiado ancho */
+}
+
+.hero-title {
+  font-size: 6.3rem;
+  line-height: 6.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+.hero-text {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+
+.hero-img {
+  width: 50rem;
+  height: auto;
+  object-fit: cover;
+}
+
+/* 📌 BOTONES */
+.hero-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.button {
+  width: 18rem;
+  height: 5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 0.8rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-getStarted {
+  background: var(--primary);
+}
+
+.button-getStarted:hover {
+  background: var(--primary-200);
+  transform: scale(1.05);
+}
+
+.button-learn {
+  background: transparent;
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.button-learn:hover {
+  color: var(--secondary);
+  background: var(--white);
+  transform: scale(1.05);
+}
+
+/*  RESPONSIVIDAD */
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-img {
+    width: 80%;
+    max-width: 40rem;
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+
+  .navbar {
+    display: none;
+    /* Oculta el navbar por defecto */
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 1000;
+    /* Asegura que esté por encima de otros elementos */
+  }
+  
+  .navbar.open {
+    display: flex;
+     background-image: linear-gradient(to top, var(--primary-600) 0%, var(--black) 70%);
+    /* Muestra el navbar cuando está abierto */
+  }
+
+  .header {
+    padding: 1rem 4rem;
+  }
+
+  .hero-section {
+    padding: 4rem 2rem;
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+
+  .hero-text {
+    font-size: 1.6rem;
+  }
+
+  .button {
+    width: 16rem;
+    height: 4.5rem;
+    font-size: 1.6rem;
+  }
+}
