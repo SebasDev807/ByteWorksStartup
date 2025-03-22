@@ -18,6 +18,4 @@ export default function ToggleButton({ openNavbar, isOpen }: ToggleButtonProps) 
             <div className={`line line-3 ${isOpen ? 'rotate-45' : ''}`}></div>
         </button>
     )
-
-
 }
