@@ -11,10 +11,10 @@ export const NavLinkItem: React.FC<NavLinkProps> = ({ text, path }) => {
             <Link
                 className="nav-link"
                 to={path}
-                smooth={true}    // 🔹 Scroll suave
-                duration={1000}   // 🔹 Velocidad de animación
-                spy={true}       // 🔹 Detecta la sección activa
-                offset={-80}     // 🔹 Ajusta si hay un navbar fijo
+                smooth={true}    
+                duration={1000}   
+                spy={true}       
+                offset={-80}     
                 activeClass="active"
                 onSetActive={(c) => console.log({ c })}
             >
