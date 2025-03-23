@@ -1,4 +1,7 @@
-export const Hero = () => {
+
+
+
+export default function Hero() {
     return (
 
         <section className="hero-section">
@@ -35,10 +38,6 @@ export const Hero = () => {
             <img
                 className="hero-img"
                 src="/abstract-figure_1.svg" alt="Abstract figure" />
-
-
-
-
 
 
         </section>

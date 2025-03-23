@@ -3,8 +3,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 12rem;
   position: relative;
+  padding: 1rem 12rem;
+  height: 8rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--black);
+  z-index: 1000;
+  
+
 }
 
 .logo {
@@ -63,13 +72,20 @@
   transform: scaleX(1);
 }
 
+/* 🔹 Efecto cuando la sección está activa */
+.nav-link.active::after {
+  transform: scaleX(1);
+  background-color: var(--primary);
+}
+
 /* HERO SECTION */
 .hero-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 7rem 1rem 12rem;
-  gap: 6rem;
+  padding:  1rem 12rem;
+  min-height: 100vh;
+  
   /* Espacio entre texto e imagen */
 }
 
@@ -89,10 +105,11 @@
   font-size: 2rem;
   font-weight: 300;
   margin-bottom: 2.5rem;
+  line-height: 3.2rem;
 }
 
 .hero-img {
-  width: 50rem;
+  width: 90%;
   height: auto;
   object-fit: cover;
 }
@@ -149,8 +166,8 @@
   }
 
   .hero-img {
-    width: 80%;
-    max-width: 40rem;
+    width: 75%;
+    max-width: 35rem;
     display: none;
   }
 }
@@ -183,7 +200,7 @@
   }
 
   .hero-section {
-    padding: 13rem;
+    padding: 2rem;
   }
 
   .hero-title {
