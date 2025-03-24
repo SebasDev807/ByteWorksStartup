@@ -13,7 +13,7 @@ export default function Navbar() {
             <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
                 <NavLinkItem text="Home" path='hero-section' />
                 <NavLinkItem text="About Us" path='about-us-section' />
-                <NavLinkItem text="Services" />
+                <NavLinkItem text="Services" path='services-section'/>
                 <NavLinkItem text="Contact" />
             </nav>
 

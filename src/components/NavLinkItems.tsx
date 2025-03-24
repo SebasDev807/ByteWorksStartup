@@ -12,7 +12,7 @@ export const NavLinkItem: React.FC<NavLinkProps> = ({ text, path }) => {
                 className="nav-link"
                 to={path}
                 smooth={true}    
-                duration={1000}   
+                duration={500}   
                 spy={true}       
                 offset={-80}     
                 activeClass="active"

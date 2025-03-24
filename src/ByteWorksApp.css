@@ -129,6 +129,7 @@
   border: none;
   color: white;
   cursor: pointer;
+  box-shadow: 13px 12px 36px -6px rgba(0,0,0,0.59);
   transition: all 0.3s ease-in-out;
 }
 
@@ -204,7 +205,7 @@
   }
 
   .hero-title {
-    font-size: 4.5rem;
+
     line-height: 5rem;
   }
 
