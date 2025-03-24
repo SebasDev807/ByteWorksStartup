@@ -43,11 +43,13 @@ export default function Technologies() {
             <h3>Technologies we use</h3>
             <ul className="technologies-row">
                 {technologies.map(tech =>
+                    
                     <li key={tech.id}>
-                        <a href={tech.url}>
+                        <a href={tech.url} target='_blank'>
                             <img src={tech.src} alt={tech.alt} className='tech-icon' />
                         </a>
                     </li>
+
                 )}
 
 

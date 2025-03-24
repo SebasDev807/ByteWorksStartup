@@ -9,20 +9,27 @@
 }
 
 .technologies-row {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
     gap: 5rem;
-    justify-content: space-start;
-    align-items: center;
 }
 
 .tech-icon {
     max-width: 10rem;
-    transition: transform 0.3s ease, filter 0.3s ease; /* Añadimos filter a la transición */
+    transition: transform 0.3s ease, filter 0.3s ease;
+    /* Añadimos filter a la transición */
     cursor: pointer;
 }
 
 .tech-icon:hover {
     transform: scale(1.2);
     border-radius: 10px;
-    filter: drop-shadow(0 0 10px rgba(128, 0, 128, 0.8)); /* Sombra que sigue la forma del icono */
+    filter: drop-shadow(0 0 10px rgba(128, 0, 128, 0.8));
+    /* Sombra que sigue la forma del icono */
+}
+
+@media (min-width: 768px) {
+    .technologies-row {
+        display: flex;
+    }
 }
