@@ -1,0 +1,106 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 12rem;
+    height: 8rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--black);
+    z-index: 1000;
+    
+  
+  }
+  
+  .logo {
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--white);
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: row;
+  }
+  
+  .navbar.open {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .nav-link {
+    position: relative;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Línea debajo del botón */
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover::after {
+    transform: scaleX(1);
+  }
+  
+  /* 🔹 Efecto cuando la sección está activa */
+  .nav-link.active::after {
+    transform: scaleX(1);
+    background-color: var(--primary);
+  }
+
+  @media (max-width: 768px) {
+
+
+    .navbar {
+      display: none;
+      /* Oculta el navbar por defecto */
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+      z-index: 1000;
+      /* Asegura que esté por encima de otros elementos */
+    }
+  
+    .navbar.open {
+      display: flex;
+      background-color: var(--black);
+      /* Muestra el navbar cuando está abierto */
+    }
+  
+    .header {
+      padding: 1rem 4rem;
+    }
+}

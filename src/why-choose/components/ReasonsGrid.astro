@@ -1,0 +1,33 @@
+---
+import ReasonCard from "./ReasonCard.astro";
+
+const reasons = [
+    {
+        title: "FAST AND EFFICIENT DEVELOPMENT ",
+        text: "We optimize every project to deliver high-performance solutions quickly.",
+        icon: "/icons/rocket-icon.svg",
+    },
+
+    {
+        title: "GUARANTEED SECURITY",
+        text: "We follow the best practices to ensure data",
+        icon: "icons/locker-icon.svg",
+    },
+
+    {
+        title: "MODERN AND ATRACTIVE DESIGN",
+        text: "We create sleek, user-friendly interfaces that adapt to any device.",
+        icon: "icons/palette-icon.svg",
+    },
+
+    {
+        title: "PASSION AND COMMITMENT",
+        text: "We love what we do and strive for excellence in every project.",
+        icon: "icons/heart-icon.svg",
+    },
+];
+---
+
+<section class="reasons-grid">
+    {reasons.map((reason) => <ReasonCard {...reason} />)}
+</section>

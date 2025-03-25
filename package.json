@@ -1,0 +1,26 @@
+{
+  "name": "veltrix",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.2.1",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "astro": "^5.5.4",
+    "astro-icon": "^1.1.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-scroll": "^1.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.13",
+    "@types/react-scroll": "^1.8.10",
+    "typescript": "^5.8.2"
+  }
+}

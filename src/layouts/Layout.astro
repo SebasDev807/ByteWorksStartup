@@ -1,0 +1,27 @@
+---
+import Navbar from "../common/components/Navbar.tsx";
+import Footer from "../common/components/Footer.astro";
+
+import "./Layout.css";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Basics</title>
+	</head>
+	<body>
+		<section class="marketing-layout">
+			<Navbar client:load />
+
+			<main class="main-content">
+				<slot />
+			</main>
+			<Footer/>
+		</section>
+	</body>
+</html>

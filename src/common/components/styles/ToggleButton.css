@@ -1,0 +1,55 @@
+.toggle-button {
+    width: 5rem;
+    height: 5rem;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transform: background-color 0.3s;
+}
+
+.line {
+    width: 30px;
+    height: 4px;
+    background-color: var(--white);
+    transition: transform 0.3s, opacity 0.3s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.line-1 {
+    top: 1.5rem; 
+}
+
+.line-2 {
+    top: 2.5rem; 
+}
+
+.line-3 {
+    top: 3.5rem; 
+}
+
+.rotate45 {
+    transform: translateX(-50%) rotate(45deg);
+    top: 2.5rem; /* Posición cuando se cruza en X */
+}
+
+.rotate-45 {
+    transform: translateX(-50%) rotate(-45deg);
+    top: 2.5rem; /* Posición cuando se cruza en X */
+}
+
+.opacity-none {
+    opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .toggle-button{
+    display: none;
+  }
+}

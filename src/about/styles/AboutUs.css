@@ -1,0 +1,68 @@
+.about-us-section {
+    display: flex;
+    padding: 1rem 12rem;
+    align-items: center;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    min-height: 80vh;
+    text-align: center;
+}
+
+.about-us-title {
+    color: var(--primary);
+}
+
+.about-us-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 60rem;
+}
+
+
+.about-us-info h3 {
+    font-size: 1.4rem;
+    color: var(--primary);
+    margin: 0;
+}
+
+.about-us-info h4 {
+    
+    margin: 0;
+    font-size: 3.2rem;
+}
+
+.about-us-info p {
+    margin: 2;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3.4rem;
+}
+
+.button-read-more {
+    background-color: var(--primary);
+    width: 100%;
+}
+
+.about-us-section img {
+    height: 50rem ;
+    border-radius: 11rem;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    
+    .about-us-section{
+        text-align: left;
+        display: flex;
+    }
+
+    .button-read-more{
+        width: 20rem;
+    }
+
+    .about-us-section img{
+        display: flex;
+    }
+
+    
+}

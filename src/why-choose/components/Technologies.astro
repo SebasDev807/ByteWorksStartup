@@ -1,0 +1,46 @@
+---
+
+import '../styles/Technologies.css'
+const technologies = [
+    {
+        src: "/icons/technologies/flutter-icon.svg",
+        alt: "flutter-icon",
+        url: "https://flutter.dev/",
+    },
+    {
+        src: "/icons/technologies/react-icon.svg",
+        alt: "react-icon",
+        url: "https://react.dev/",
+    },
+    {
+        src: "/icons/technologies/nodejs-icon.svg",
+        alt: "nodejs-icon",
+        url: "https://nodejs.org/en",
+    },
+    {
+        src: "/icons/technologies/angular-icon.svg",
+        alt: "angular-icon",
+        url: "https://angular.dev/",
+    },
+    {
+        src: "/icons/technologies/nestjs-icon.svg",
+        alt: "angular-icon",
+        url: "https://nestjs.com/",
+    },
+];
+---
+
+<div class="technologies">
+    <h3>Technologies we use</h3>
+    <ul class="technologies-row">
+        {
+            technologies.map((tech) => (
+                <li>
+                    <a href={tech.url} target="_blank">
+                        <img src={tech.src} alt={tech.alt} class="tech-icon" />
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
+</div>
