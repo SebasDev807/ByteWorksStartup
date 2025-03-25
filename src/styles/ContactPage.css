@@ -1,11 +1,18 @@
 .form-section {
     display: flex;
-    min-height: 100vh;
+    gap: 5rem;
+    flex-direction: column;
+    min-height: 75vh;
+    justify-content: space-between;
 }
+
+
+
 
 .form-section h2 {
     color: var(--white);
-    
+    font-size: 4.3rem;
+
 }
 
 .form-section span {
@@ -18,7 +25,10 @@
     flex-direction: column;
     padding: 3rem;
     border-radius: 2rem;
-    max-height: 50rem;
+    max-height: auto;
+    font-size: 1.6rem;
+    max-width: 47.8rem;
+    box-shadow: 14px 14px 19px 0px rgba(0, 0, 0, 0.75);
 }
 
 legend {
@@ -29,22 +39,95 @@ legend {
 
 .input-item {
     margin-top: 2rem;
-
     display: grid;
+    gap: 1rem;
 }
 
 .input-item input {
     padding: 1rem;
+
 }
 
 .input-item textarea {
     height: 15rem;
+    resize: none;
+    background: transparent;
+    border-radius: 1rem;
+    color: var(--white);
 }
 
-.button-form{
+.button-form {
     margin-top: 2rem;
     background-color: var(--primary);
     width: 100%;
     border-radius: 2rem;
+
 }
 
+.button-form:hover {
+    background-color: var(--primary-200);
+
+}
+
+
+.subject-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+
+.button-subject {
+    transition: 0.2s ease-in-out;
+    padding: 1rem;
+    background: transparent;
+    border: 1px solid var(--lightgray);
+    border-radius: 2rem;
+    color: var(--white);
+    font-size: 1.6rem;
+    cursor: pointer;
+
+}
+
+.button-subject:hover {
+
+    background-color: var(--primary);
+}
+
+.input-underline {
+    border: none;
+    border-bottom: 0.2rem solid var(--primary);
+    background: transparent;
+    color: var(--white);
+}
+
+.input-underline:focus {
+    outline: none;
+}
+
+.icon {
+    max-width: 5rem;
+}
+
+.form-item {
+    padding-top: 4rem;
+}
+
+.form-item {
+    display: flex;
+    gap: 2rem;
+}
+
+.error-message{
+    color: var(--danger);
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    .form-section {
+
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+    }
+}
