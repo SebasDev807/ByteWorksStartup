@@ -18,7 +18,10 @@
 
 .services-grid {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
     gap: 2rem;
     padding: 1rem 10rem;
 }
@@ -50,10 +53,9 @@
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
     .services-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-
     }
 }
