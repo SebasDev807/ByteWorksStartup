@@ -1,0 +1,33 @@
+---
+import { Icon } from 'astro-icon/components';
+import ContactCard from '../components/ContactCard.astro';
+import Form from '../ui/Form.astro';
+
+const contacts = [
+    {icon:"contact/home",title:"Nuestra Ubicación",info:"Popayán - Cauca - Colombia"},
+    {icon:"contact/phone",title:"Número de telefono",info:"+573147875028"},
+    {icon:"contact/email",title:"Correo electronico",info:"veltrix_dev@gmail.com"},
+]
+---
+
+<section class="px-4 md:px-10 lg:px-20 py-10 lg:py-0 flex flex-col lg:flex-row justify-between items-center min-h-screen bg-sky" id="contact">
+    <div class="space-y-4 lg:space-y-2 w-full lg:max-w-xl mb-10 lg:mb-0">
+        <h3 class="text-xl md:text-2xl font-bold text-sky-900">Contactanos</h3>
+        <h2 class="text-3xl md:text-4xl text-sky-950 font-bold">
+            HABLEMOS Y CONSTRUYAMOS JUNTOS
+        </h2>
+        <p class="text-gray-500 text-sm md:text-base">
+            ¿Tienes una idea en mente o necesitas una solución a medida? En
+            Veltrix, estamos listos para escucharte. Escríbenos y hagamos que tu
+            proyecto cobre vida con tecnología de alto nivel.
+        </p>
+        
+        <ul class="space-y-4 mt-6">
+            {contacts.map(contact => <ContactCard {...contact}/>)}
+        </ul>
+    </div>
+
+    <div class="w-full lg:w-auto">
+        <Form/>
+    </div>
+</section>
