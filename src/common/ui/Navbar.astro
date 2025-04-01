@@ -3,20 +3,24 @@ import { Icon } from "astro-icon/components";
 ---
 
 <header
-    class="flex justify-between items-center fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-3xl py-4 px-6"
+    class="flex justify-between items-center fixed top-0 left-0 w-full z-50 bg-white/70 dark:bg-slate-900 backdrop-blur-3xl py-4 px-6"
 >
+    
+<div class="dark:invert dark:brightness-10 dark:sepia">
     <a href="#">
-        <img src="/logo.svg" class="h-15" />
+        <img src="/logo.svg" class="w-40" />
     </a>
+</div>
 
-    <nav class="hidden list-none md:flex gap-10">
-        <li><a href="#home" class="hover:text-sky-900">Inicio</a></li>
-        <li><a href="#about" class="hover:text-sky-900">Sobre Nosotros</a></li>
-        <li><a href="#team" class="hover:text-sky-900">Nuestro Equipo</a></li>
-        <li><a href="#contact" class="hover:text-sky-900">Contacto</a></li>
 
-        <button>
-            <Icon name="ui/mode_night" width={30} height={30} />
+    <nav class="hidden list-none md:flex gap-10 dark:text-gray-200 ">
+        <li><a href="#home" class="hover:text-sky-900 dark:hover:text-sky-600">Inicio</a></li>
+        <li><a href="#about" class="hover:text-sky-900 dark:hover:text-sky-600">Sobre Nosotros</a></li>
+        <li><a href="#team" class="hover:text-sky-900 dark:hover:text-sky-600" >Nuestro Equipo</a></li>
+        <li><a href="#contact" class="hover:text-sky-900 dark:hover:text-sky-600">Contacto</a></li>
+
+        <button id="toggle-theme" class="ml-4 cursor-pointer">
+            <img src="/mode_night.svg" alt="mode_night" id="theme-icon" />
         </button>
     </nav>
 
@@ -25,7 +29,7 @@ import { Icon } from "astro-icon/components";
         <Icon name="ui/menu" width={30} height={30} />
     </button>
 
-    <!-- Menú desplegable con blur mejorado -->
+    <!-- Menú desplegable  -->
     <nav
         id="mobile-menu"
         class="hidden absolute top-16 left-0 w-full text-black text-center bg-white/70 backdrop-blur-3xl shadow-lg md:hidden"
@@ -57,3 +61,4 @@ import { Icon } from "astro-icon/components";
 
 <script src="../utils/toggle-navbar.ts"></script>
 <script src="../utils/scroll-to-section.ts"></script>
+<script src="../utils/toggle-theme.ts"></script>

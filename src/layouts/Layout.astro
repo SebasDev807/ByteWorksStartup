@@ -1,4 +1,5 @@
 ---
+import Footer from "../common/ui/Footer.astro";
 import Navbar from "../common/ui/Navbar.astro";
 ---
 
@@ -15,12 +16,15 @@ import Navbar from "../common/ui/Navbar.astro";
 		/>
 		<title>Astro Basics</title>
 	</head>
-	<body class="font-[Inter] bg-white">
+	<body class="font-[Inter] bg-white dark:bg-slate-900 ">
 		<Navbar />
 		<main class="space-y-20 pt-[80px]">
 			<slot />
 		</main>
+		<Footer/>
+	
 	</body>
+
 </html>
 <style>
 	body {
@@ -28,3 +32,4 @@ import Navbar from "../common/ui/Navbar.astro";
 		width: 99vw !important;
 	}
 </style>
+

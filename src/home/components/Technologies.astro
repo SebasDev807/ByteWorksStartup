@@ -25,14 +25,16 @@ const technologies = [
     <ul class="flex items-center gap-10 justify-center sm:justify-start">
         {
             technologies.map((tech) => (
-                <a href={tech.url} target="_blank">
-                    <Icon
-                        name={tech.path}
-                        width={50}
-                        height={50}
-                        class="min-w-10 hover:fill-sky-950"
-                    />
-                </a>
+             
+                    <a href={tech.url} target="_blank">
+                        <Icon
+                            name={tech.path}
+                            width={50}
+                            height={50}
+                            class="min-w-10 hover:fill-sky-950"
+                        />
+                    </a>
+            
             ))
         }
     </ul>

@@ -12,20 +12,20 @@ const { userImage, name, title, description } = Astro.props;
 ---
 
 <article
-    class="bg-gray-100 w-100 flex flex-col items-center text-center shadow-xl p-6 rounded-lg transition-transform duration-300 hover:translate-y-[-0.5rem] hover:shadow-2xl"
+    class="bg-gray-100 w-100 flex flex-col items-center text-center shadow-xl p-6 rounded-lg transition-transform duration-300 hover:translate-y-[-0.5rem] hover:shadow-2xl dark:bg-slate-800"
 >
     <div class="w-25 h-25 rounded-full overflow-hidden shadow-lg">
         <img src={userImage} alt={name} class="object-cover w-full h-full" />
     </div>
 
     <div class="pt-4">
-        <h2 class="text-2xl text-sky-900 font-bold mb-2">{name}</h2>
+        <h2 class="text-2xl text-sky-900 font-bold mb-2 dark:text-sky-600">{name}</h2>
         <h3 class="text-xl text-sky-800 mb-4">{title}</h3>
-        <p class="leading-8 text-gray-600">{description}</p>
+        <p class="leading-8 text-gray-500">{description}</p>
     </div>
 
     
-    <div class="flex gap-4 mt-4 text-sky-950">
+    <div class="flex gap-4 mt-4 text-sky-950 dark:text-sky-600">
         <Icon name="social/instagram" width={25} height={25} class="fill-current" />
         <Icon name="social/linkedin" width={25} height={25} class="fill-current" />
         <Icon name="social/github" width={25} height={25} class="fill-current" />
